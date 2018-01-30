@@ -1,117 +1,79 @@
+/* stylelint-disable color-hex-length */
+/**
+ * Default preset file.
+ *
+ * Use this space to customise variables, create mixins and override SCSS.
+ */
 
-/* Corporate identity variables */
+// Colors
+$gray-dark:                 #373a3c !default;
+$gray:                      #55595c !default;
+$gray-light:                #818a91 !default;
+$gray-lighter:              #eceeef !default;
+$gray-lightest:             #f7f7f9 !default;
 
-$reboost_green: #becc00;
-$reboost_orange: #f1871a;
+$brand-primary:             #1177d1 !default;
+$brand-info:                #ad53b2 !default;
+$brand-success:             #77b300 !default;
+$brand-warning:             #ff8800 !default;
+$brand-danger:              #ff4136 !default;
+$brand-inverse:             $gray-dark !default;
+$navbar-height:             50px !default;
 
-$brand-primary:             #5183d6 !default;
-$brand-success:             #becc00 !default;
-$brand-info:                #cfd8dc !default;
-$brand-warning:             #f1871a !default;
-$brand-danger:              #FF5500 !default;
-
-// /* Typography */
-
-// $font-family-sanchez: $theme_font-family_text !default;
-// $font-family-montserrat: $theme_font-family_headings !default;
-
-// $font-family-sans-serif: $font-family-sanchez !default;
-// $font-size-root: 16px !default;
-
-// $headings-color: $theme_color_primary_darker_1 !default;
-// $headings-font-family: $theme_font-family_headings;
-// $headings-font-weight: 700 !default;
-
-// $font-family-sans-serif: $theme_font-family_text !default;
-$font-size-root: 16px !default;
-
-$font-size-h1: 36px !default;
-$font-size-h2: 24px !default;
-$font-size-h3: 1.75rem !default;
-$font-size-h4: 1.5rem !default;
-$font-size-h5: 1.25rem !default;
-$font-size-h6: 1rem !default;
-
-$border-radius: 0 !default;
-
-
+// Spacing
+$spacer:   1rem !default;
+$spacer-x: $spacer !default;
+$spacer-y: $spacer !default;
+$border-width: 1px !default;
 
 // Body
-// $body-bg: $theme_color_gray_lighter_2 !default;
-// $body-color: $theme_color_primary_darker_1 !default;
+$body-bg:    #fff !default;
+$body-color: #3a4a4a !default;
+
+// Typography
+$font-family-sans-serif: "Open Sans", "Helvetica Neue", Arial, sans-serif !default;
+$font-size-root: 14px !default;
+
+// Tables
+$table-bg:                      transparent !default;
+$table-bg-accent:               #fafafa !default;
+$table-bg-hover:                lighten($brand-primary, 55%) !default;
+$table-bg-active:               $table-bg-hover !default;
+$table-border-color:            #f4f4f4 !default;
+
+// Dropdowns
+$dropdown-border-color:          #e2e2e2 !default;
+$dropdown-link-color:            $body-color;
 
 // Navbar
-$navbar-height: 60px !default;
-
-// Breadcrumbs
-
-$breadcrumb-padding-y: .75rem !default;
-$breadcrumb-padding-x: 1rem !default;
-$breadcrumb-item-padding: .5rem !default;
-
-$breadcrumb-bg: #aaa !default;
-$breadcrumb-divider-color: #060606 !default;
-$breadcrumb-active-color: #E35D6A !default;
-$breadcrumb-divider: "/" !default;
-
-
+$navbar-light-color:                rgba(0, 0, 0, .535) !default;
+$navbar-light-hover-color:          $brand-primary !default;
+$navbar-light-active-color:         $brand-primary !default;
 
 // Cards
-$card-spacer-x: 1.5rem !default;
-$card-spacer-y: .75rem !default;
+$card-border-radius:       0 !default;
+$card-border-color:        rgba(238, 238, 238, 1) !default;
 
-$card-border-radius: 0 !default;
-$card-border-width: 0 !default;
+// Breadcrumbs
+$breadcrumb-bg:                 transparent !default;
+$breadcrumb-padding-x:          0 !default;
+$breadcrumb-divider: "/" !default;
+$breadcrumb-divider-rtl: "/" !default;
 
+// Drawer
+$drawer-bg: #F5f5f5 !default;
+$drawer-padding-x: 5px !default;
+$drawer-padding-y: 0px !default;
+$drawer-width: 248px !default;
+$drawer-link-color: #3A3A3A !default;
 
-///////////////
-// BOOTSTRAP //
-///////////////
-
-/* Links */
-
-$link-color:            $theme_color_thirdary_lighter_1 !default;
-$link-decoration:       none !default;
-$link-hover-color:      $theme_color_thirdary_lighter_1 !default;
-$link-hover-decoration: underline !default;
-
-/* Input */
-
-$input-color: $theme_color_primary_darker_1 !default;
-$input-padding-x: .75rem;
-$input-padding-y: .7rem;
-$input-bg: #FFF !default;
-$input-border-color: #E5E5E5 !default;
-$input-border-focus: $reboost_green !default;
-
-/* Buttons */
-
-$btn-font-weight: 400 !default;
-$btn-border-radius: 0 !default;
-
-// $btn-primary-color: $theme_color_primary_darker_1 !default;
-// $btn-primary-bg: $reboost_green !default;
-// $btn-primary-border: darken($reboost_green, 10%) !default;
-
-$btn-secondary-color: #f1871a !default;
-$btn-secondary-bg: #FFFFFF !default;
-$btn-secondary-border: lighten(#f1871a, 10%) !default;
-
-// $btn-padding-y-sm: .4rem;
-// $btn-padding-x-sm: .7rem;
-// $font-size-sm: 13px !default;
-// $btn-border-radius-sm: 0 !default;
-
-// /* Dropdowns */
-
-$dropdown-margin-top: 2px !default;
-$dropdown-bg: #FFFFFF !default;
-$dropdown-border-width: 1px !default;
-$dropdown-border-color: rgba(0,0,0,.15);
-$dropdown-divider-bg: #EEF3F9 !default;
+// Heading sizes
+$font-size-h1: 1.7rem !default;
+$font-size-h2: 1.45rem !default;
+$font-size-h3: 1.15rem !default;
+$font-size-h4: 1.5rem !default;
+$font-size-h5: 1rem !default;
+$font-size-h6: 1rem !default;
 
 
-
-
-
-
+$small-font-size: 0.85rem;

@@ -8,8 +8,11 @@ $breadcrumb-divider-rtl: "◀" !default;
 @import "fontawesome/font-awesome";
 
 // Import the bootstrap variables.
+@import "variables.scss";
 @import "bs4/bootstrap";
+
+// Prepare variables for Moodle use
 @import "bs4alphacompat";
 @import "moodle.scss";
-@import "variables.scss";
+
 @import "stuff.scss";

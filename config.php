@@ -29,6 +29,7 @@ $THEME->name = 'reboost';
 $THEME->sheets = ['reboost'];
 $THEME->editor_sheets = [];
 $THEME->parents = ['boost'];
+$THEME->parents_exclude_sheets = ['boost' => ['moodle']];
 $THEME->enable_dock = false;
 $THEME->yuicssmodules = array();
 $THEME->rendererfactory = 'theme_overridden_renderer_factory';
@@ -36,9 +37,9 @@ $THEME->rendererfactory = 'theme_overridden_renderer_factory';
 $THEME->requiredblocks = '';
 $THEME->addblockposition = BLOCK_ADDBLOCK_POSITION_FLATNAV;
 
-$THEME->scss = function($theme) {
-    return theme_reboost_get_main_scss_content($theme);
-};
+// $THEME->scss = function($theme) {
+//     return theme_reboost_get_main_scss_content($theme);
+// };
 
 $THEME->layouts = [
     'base' => array(

@@ -2338,6 +2338,12 @@
   overflow: visible;
   clip: auto; }
 
+/* stylelint-disable color-hex-length */
+/**
+ * Default preset file.
+ *
+ * Use this space to customise variables, create mixins and override SCSS.
+ */
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -2371,7 +2377,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-sans-serif: "Open Sans", "Helvetica Neue", Arial, sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
 *,
@@ -2395,11 +2401,11 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #3a4a4a;
   text-align: left;
   background-color: #fff; }
 
@@ -2694,7 +2700,7 @@ hr {
 
 small,
 .small {
-  font-size: 80%;
+  font-size: 0.85rem;
   font-weight: 400; }
 
 mark,
@@ -3390,14 +3396,14 @@ pre {
   .generaltable td {
     padding: 0.75rem;
     vertical-align: top;
-    border-top: 1px solid #dee2e6; }
+    border-top: 1px solid #f4f4f4; }
   .table thead th, table.collection thead th, table.flexible thead th,
   .generaltable thead th {
     vertical-align: bottom;
-    border-bottom: 2px solid #dee2e6; }
+    border-bottom: 2px solid #f4f4f4; }
   .table tbody + tbody, table.collection tbody + tbody, table.flexible tbody + tbody,
   .generaltable tbody + tbody {
-    border-top: 2px solid #dee2e6; }
+    border-top: 2px solid #f4f4f4; }
   .table .table, table.collection .table, table.flexible .table,
   .generaltable .table, .table table.collection, table.collection table.collection, table.flexible table.collection,
   .generaltable table.collection, .table table.flexible, table.collection table.flexible, table.flexible table.flexible,
@@ -3428,10 +3434,10 @@ table#listdirectories td {
   padding: 0.3rem; }
 
 .table-bordered, table.collection {
-  border: 1px solid #dee2e6; }
+  border: 1px solid #f4f4f4; }
   .table-bordered th, table.collection th,
   .table-bordered td, table.collection td {
-    border: 1px solid #dee2e6; }
+    border: 1px solid #f4f4f4; }
   .table-bordered thead th, table.collection thead th,
   .table-bordered thead td, table.collection thead td {
     border-bottom-width: 2px; }
@@ -3767,7 +3773,7 @@ table#permissions .table-active:hover {
 .generaltable .thead-light th {
   color: #495057;
   background-color: #e9ecef;
-  border-color: #dee2e6; }
+  border-color: #f4f4f4; }
 
 .table-dark {
   color: #fff;
@@ -4047,7 +4053,7 @@ div.backup-section + form,
   display: none;
   width: 100%;
   margin-top: 0.25rem;
-  font-size: 80%;
+  font-size: 0.85rem;
   color: #28a745; }
 
 .valid-tooltip {
@@ -4124,7 +4130,7 @@ div.backup-section + form,
   display: none;
   width: 100%;
   margin-top: 0.25rem;
-  font-size: 80%;
+  font-size: 0.85rem;
   color: #dc3545; }
 
 .invalid-tooltip {
@@ -4753,12 +4759,12 @@ tbody.collapse.show {
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 1rem;
-  color: #212529;
+  color: #3a4a4a;
   text-align: left;
   list-style: none;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid #e2e2e2;
   border-radius: 0.25rem; }
 
 .dropup .dropdown-menu {
@@ -4845,7 +4851,7 @@ tbody.collapse.show {
   padding: 0.25rem 1.5rem;
   clear: both;
   font-weight: 400;
-  color: #212529;
+  color: #3a4a4a;
   text-align: inherit;
   white-space: nowrap;
   background-color: transparent;
@@ -5729,14 +5735,14 @@ tbody.collapse.show {
     bottom: 100%; }
 
 .navbar-light .navbar-brand {
-  color: rgba(0, 0, 0, 0.9); }
+  color: #1177d1; }
   .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
-    color: rgba(0, 0, 0, 0.9); }
+    color: #1177d1; }
 
 .navbar-light .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.5); }
+  color: rgba(0, 0, 0, 0.535); }
   .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-    color: rgba(0, 0, 0, 0.7); }
+    color: #1177d1; }
   .navbar-light .navbar-nav .nav-link.disabled {
     color: rgba(0, 0, 0, 0.3); }
 
@@ -5744,21 +5750,21 @@ tbody.collapse.show {
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active {
-  color: rgba(0, 0, 0, 0.9); }
+  color: #1177d1; }
 
 .navbar-light .navbar-toggler {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.535);
   border-color: rgba(0, 0, 0, 0.1); }
 
 .navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.535)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
 
 .navbar-light .navbar-text {
-  color: rgba(0, 0, 0, 0.5); }
+  color: rgba(0, 0, 0, 0.535); }
   .navbar-light .navbar-text a {
-    color: rgba(0, 0, 0, 0.9); }
+    color: #1177d1; }
     .navbar-light .navbar-text a:hover, .navbar-light .navbar-text a:focus {
-      color: rgba(0, 0, 0, 0.9); }
+      color: #1177d1; }
 
 .navbar-dark .navbar-brand {
   color: #fff; }
@@ -5801,20 +5807,20 @@ tbody.collapse.show {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem; }
+  border: 1px solid #eeeeee;
+  border-radius: 0; }
   .card > hr, #page-enrol-users #filterform > hr, .que .history > hr, .userprofile .profile_tree section > hr, .groupinfobox > hr, .forumpost > hr, .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax .yui-layout-unit-right > hr,
   .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax .yui-layout-unit-bottom > hr, .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax #chat-messages .chat-message.course-theme > hr, .well > hr {
     margin-right: 0;
     margin-left: 0; }
   .card > .list-group:first-child .list-group-item:first-child, #page-enrol-users #filterform > .list-group:first-child .list-group-item:first-child, .que .history > .list-group:first-child .list-group-item:first-child, .userprofile .profile_tree section > .list-group:first-child .list-group-item:first-child, .groupinfobox > .list-group:first-child .list-group-item:first-child, .forumpost > .list-group:first-child .list-group-item:first-child, .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax .yui-layout-unit-right > .list-group:first-child .list-group-item:first-child,
   .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax .yui-layout-unit-bottom > .list-group:first-child .list-group-item:first-child, .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax #chat-messages .chat-message.course-theme > .list-group:first-child .list-group-item:first-child, .well > .list-group:first-child .list-group-item:first-child {
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem; }
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
   .card > .list-group:last-child .list-group-item:last-child, #page-enrol-users #filterform > .list-group:last-child .list-group-item:last-child, .que .history > .list-group:last-child .list-group-item:last-child, .userprofile .profile_tree section > .list-group:last-child .list-group-item:last-child, .groupinfobox > .list-group:last-child .list-group-item:last-child, .forumpost > .list-group:last-child .list-group-item:last-child, .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax .yui-layout-unit-right > .list-group:last-child .list-group-item:last-child,
   .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax .yui-layout-unit-bottom > .list-group:last-child .list-group-item:last-child, .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax #chat-messages .chat-message.course-theme > .list-group:last-child .list-group-item:last-child, .well > .list-group:last-child .list-group-item:last-child {
-    border-bottom-right-radius: 0.25rem;
-    border-bottom-left-radius: 0.25rem; }
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0; }
 
 .card-body {
   flex: 1 1 auto;
@@ -5840,18 +5846,18 @@ tbody.collapse.show {
   padding: 0.75rem 1.25rem;
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
+  border-bottom: 1px solid #eeeeee; }
   .card-header:first-child {
-    border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0; }
+    border-radius: calc(0 - 1px) calc(0 - 1px) 0 0; }
   .card-header + .list-group .list-group-item:first-child {
     border-top: 0; }
 
 .card-footer {
   padding: 0.75rem 1.25rem;
   background-color: rgba(0, 0, 0, 0.03);
-  border-top: 1px solid rgba(0, 0, 0, 0.125); }
+  border-top: 1px solid #eeeeee; }
   .card-footer:last-child {
-    border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px); }
+    border-radius: 0 0 calc(0 - 1px) calc(0 - 1px); }
 
 .card-header-tabs {
   margin-right: -0.625rem;
@@ -5873,17 +5879,17 @@ tbody.collapse.show {
 
 .card-img {
   width: 100%;
-  border-radius: calc(0.25rem - 1px); }
+  border-radius: calc(0 - 1px); }
 
 .card-img-top {
   width: 100%;
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px); }
+  border-top-left-radius: calc(0 - 1px);
+  border-top-right-radius: calc(0 - 1px); }
 
 .card-img-bottom {
   width: 100%;
-  border-bottom-right-radius: calc(0.25rem - 1px);
-  border-bottom-left-radius: calc(0.25rem - 1px); }
+  border-bottom-right-radius: calc(0 - 1px);
+  border-bottom-left-radius: calc(0 - 1px); }
 
 .card-deck {
   display: flex;
@@ -6009,7 +6015,7 @@ tbody.collapse.show {
             border-bottom-left-radius: 0; }
         .card-group > .card:only-child, #page-enrol-users .card-group > #filterform:only-child, .que .card-group > .history:only-child, .userprofile .profile_tree .card-group > section:only-child, .card-group > .groupinfobox:only-child, .card-group > .forumpost:only-child, .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax .card-group > .yui-layout-unit-right:only-child,
         .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax .card-group > .yui-layout-unit-bottom:only-child, .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax #chat-messages .card-group > .chat-message.course-theme:only-child, .card-group > .well:only-child {
-          border-radius: 0.25rem; }
+          border-radius: 0; }
           .card-group > .card:only-child .card-img-top, #page-enrol-users .card-group > #filterform:only-child .card-img-top, .que .card-group > .history:only-child .card-img-top, .userprofile .profile_tree .card-group > section:only-child .card-img-top, .card-group > .groupinfobox:only-child .card-img-top, .card-group > .forumpost:only-child .card-img-top, .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax .card-group > .yui-layout-unit-right:only-child .card-img-top,
           .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax .card-group > .yui-layout-unit-bottom:only-child .card-img-top, .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax #chat-messages .card-group > .chat-message.course-theme:only-child .card-img-top, .card-group > .well:only-child .card-img-top,
           .card-group > .card:only-child .card-header, #page-enrol-users
@@ -6023,8 +6029,8 @@ tbody.collapse.show {
           .card-group > .yui-layout-unit-bottom:only-child .card-header, .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax #chat-messages
           .card-group > .chat-message.course-theme:only-child .card-header,
           .card-group > .well:only-child .card-header {
-            border-top-left-radius: 0.25rem;
-            border-top-right-radius: 0.25rem; }
+            border-top-left-radius: 0;
+            border-top-right-radius: 0; }
           .card-group > .card:only-child .card-img-bottom, #page-enrol-users .card-group > #filterform:only-child .card-img-bottom, .que .card-group > .history:only-child .card-img-bottom, .userprofile .profile_tree .card-group > section:only-child .card-img-bottom, .card-group > .groupinfobox:only-child .card-img-bottom, .card-group > .forumpost:only-child .card-img-bottom, .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax .card-group > .yui-layout-unit-right:only-child .card-img-bottom,
           .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax .card-group > .yui-layout-unit-bottom:only-child .card-img-bottom, .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax #chat-messages .card-group > .chat-message.course-theme:only-child .card-img-bottom, .card-group > .well:only-child .card-img-bottom,
           .card-group > .card:only-child .card-footer, #page-enrol-users
@@ -6038,8 +6044,8 @@ tbody.collapse.show {
           .card-group > .yui-layout-unit-bottom:only-child .card-footer, .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax #chat-messages
           .card-group > .chat-message.course-theme:only-child .card-footer,
           .card-group > .well:only-child .card-footer {
-            border-bottom-right-radius: 0.25rem;
-            border-bottom-left-radius: 0.25rem; }
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0; }
         .card-group > .card:not(:first-child):not(:last-child):not(:only-child), #page-enrol-users .card-group > #filterform:not(:first-child):not(:last-child):not(:only-child), .que .card-group > .history:not(:first-child):not(:last-child):not(:only-child), .userprofile .profile_tree .card-group > section:not(:first-child):not(:last-child):not(:only-child), .card-group > .groupinfobox:not(:first-child):not(:last-child):not(:only-child), .card-group > .forumpost:not(:first-child):not(:last-child):not(:only-child), .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax .card-group > .yui-layout-unit-right:not(:first-child):not(:last-child):not(:only-child),
         .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax .card-group > .yui-layout-unit-bottom:not(:first-child):not(:last-child):not(:only-child), .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax #chat-messages .card-group > .chat-message.course-theme:not(:first-child):not(:last-child):not(:only-child), .card-group > .well:not(:first-child):not(:last-child):not(:only-child) {
           border-radius: 0; }
@@ -6098,10 +6104,10 @@ tbody.collapse.show {
 .breadcrumb {
   display: flex;
   flex-wrap: wrap;
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 0;
   margin-bottom: 1rem;
   list-style: none;
-  background-color: #e9ecef;
+  background-color: transparent;
   border-radius: 0.25rem; }
 
 .breadcrumb-item + .breadcrumb-item::before {
@@ -6448,7 +6454,7 @@ tbody.collapse.show {
     text-decoration: none;
     background-color: #f8f9fa; }
   .list-group-item-action:active {
-    color: #212529;
+    color: #3a4a4a;
     background-color: #e9ecef; }
 
 .list-group-item {
@@ -6712,7 +6718,7 @@ button.close, .moodle-dialogue-base button.closebutton {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6797,7 +6803,7 @@ button.close, .moodle-dialogue-base button.closebutton {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6915,7 +6921,7 @@ button.close, .moodle-dialogue-base button.closebutton {
 
 .popover-body {
   padding: 0.5rem 0.75rem;
-  color: #212529; }
+  color: #3a4a4a; }
 
 .carousel {
   position: relative; }
@@ -10752,7 +10758,7 @@ ul {
 .dropdown-item a {
   display: block;
   width: 100%;
-  color: #212529; }
+  color: #3a4a4a; }
 
 .competency-tree ul {
   padding-left: 1.5rem; }
@@ -10804,7 +10810,7 @@ ul {
     font-size: 64px; }
 
 a .icon {
-  color: #212529; }
+  color: #3a4a4a; }
 
 .navbar-dark a .icon {
   color: rgba(255, 255, 255, 0.5) !important;
@@ -11370,7 +11376,7 @@ span:first-of-type > .icon {
 
 .block .block-controls .dropdown-toggle {
   /* So that the caret takes the colour of the icon. */
-  color: #212529; }
+  color: #3a4a4a; }
 
 [data-region="blocks-column"] {
   width: 250px;
@@ -11737,7 +11743,7 @@ span:first-of-type > .icon {
     margin-right: 2px; }
 
 .navbar {
-  max-height: 60px; }
+  max-height: 50px; }
 
 /* calendar.less */
 .calendar_event_category {
@@ -12158,7 +12164,7 @@ table.calendartable caption {
   bottom: 0; }
 
 .course-content .section-summary {
-  border: 1px solid #dee2e6;
+  border: 1px solid #f4f4f4;
   margin-top: 5px;
   list-style: none; }
 
@@ -12210,7 +12216,7 @@ table.calendartable caption {
   margin-top: 0; }
 
 .course-content ul li.section.main {
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid #f4f4f4;
   margin-top: 0; }
   .course-content ul li.section.main:last-child {
     border-bottom: 0; }
@@ -12708,7 +12714,7 @@ span.editinstructions {
     margin: 0 0.5em 0.5em;
     position: relative; }
   #course-category-listings .detail-pair {
-    border-bottom: 1px solid #dee2e6;
+    border-bottom: 1px solid #f4f4f4;
     margin: 0 1rem; }
     #course-category-listings .detail-pair > * {
       display: inline-block; }
@@ -12884,9 +12890,9 @@ span.editinstructions {
 
 /* Anchor link offset fix. This makes hash links scroll 60px down to account for the fixed header. */
 :target {
-  padding-top: 90px !important;
+  padding-top: 80px !important;
   /* stylelint-disable declaration-no-important */
-  margin-top: -60px !important;
+  margin-top: -50px !important;
   /* negative fixed header height */ }
 
 .pagelayout-embedded :target {
@@ -12894,22 +12900,22 @@ span.editinstructions {
   margin-top: initial; }
 
 #nav-drawer.closed {
-  left: -305px; }
+  left: -268px; }
 
 #page {
-  margin-top: 60px; }
+  margin-top: 50px; }
 
 /* Use a variable for the drawer background colors. */
 [data-region="drawer"] {
   position: fixed;
-  padding: 20px 20px;
-  width: 285px;
-  top: 60px;
-  height: calc(100% - 60px);
+  padding: 5px 0px;
+  width: 248px;
+  top: 50px;
+  height: calc(100% - 50px);
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   z-index: 999;
-  background-color: #dee2e6;
+  background-color: #F5f5f5;
   -webkit-transition: right 0.5s ease, left 0.5s ease;
   -moz-transition: right 0.5s ease, left 0.5s ease;
   transition: right 0.5s ease, left 0.5s ease; }
@@ -12919,7 +12925,7 @@ span.editinstructions {
   left: 0; }
 
 #page {
-  margin-top: 60px; }
+  margin-top: 50px; }
 
 .pagelayout-embedded #page {
   margin-top: 0; }
@@ -12931,11 +12937,11 @@ body.drawer-ease {
 
 @media (min-width: 768px) {
   body.drawer-open-left {
-    margin-left: 285px; } }
+    margin-left: 248px; } }
 
 @media (min-width: 768px) {
   body.drawer-open-right {
-    margin-right: 285px; } }
+    margin-right: 248px; } }
 
 .fp-content-center {
   height: 100%;
@@ -14822,7 +14828,7 @@ body.path-question-type {
     margin: 0; }
 
 #page-mod-quiz-edit .questionbankwindow div.header .title {
-  color: #212529; }
+  color: #3a4a4a; }
 
 #page-mod-quiz-edit div.container div.generalbox {
   background-color: transparent;
@@ -15254,7 +15260,7 @@ body.path-question-type .mform fieldset.hidden {
 .mform fieldset {
   margin-left: 1.5rem;
   margin-bottom: 0.5rem;
-  border-bottom: 1px solid #dee2e6; }
+  border-bottom: 1px solid #f4f4f4; }
 
 .editor_atto_content.form-control {
   width: 100%; }
@@ -15400,8 +15406,8 @@ fieldset.coursesearchbox label {
 .availability-inner,
 .availability-plugincontrols {
   float: left;
-  border-radius: 0.25rem;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0;
+  border: 1px solid #eeeeee;
   padding: 0.625rem;
   margin-left: 0.625rem; }
 
@@ -15448,7 +15454,7 @@ fieldset.coursesearchbox label {
   padding: 0.2em;
   margin: 0;
   cursor: pointer;
-  color: #212529; }
+  color: #3a4a4a; }
 
 .form-autocomplete-suggestions li:hover {
   background-color: #4da3ff;
@@ -15459,7 +15465,7 @@ fieldset.coursesearchbox label {
   color: #495057; }
 
 .form-autocomplete-downarrow {
-  color: #212529;
+  color: #3a4a4a;
   position: relative;
   top: 0.2em;
   left: -1.5em;
@@ -15525,8 +15531,8 @@ div.backup-section + form, [data-fieldtype="modgrade"]
 
 [data-fieldtype="modgrade"] {
   background-color: #fff;
-  border-radius: 0.25rem;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0;
+  border: 1px solid #eeeeee;
   padding: 1.25rem;
   margin-left: 15px;
   max-width: 30rem; }
@@ -15687,10 +15693,10 @@ select {
   vertical-align: top; }
 
 .path-mod-forum .subscriptionmode {
-  color: #212529; }
+  color: #3a4a4a; }
 
 .path-mod-forum .activesetting {
-  color: #212529;
+  color: #3a4a4a;
   font-weight: bold; }
 
 .forumpost {
@@ -15731,7 +15737,7 @@ select {
 
 .maincalendar .calendarmonth td,
 .maincalendar .calendarmonth th {
-  border: 1px dotted #dee2e6; }
+  border: 1px dotted #f4f4f4; }
 
 .path-grade-report-grader h1 {
   text-align: inherit; }
@@ -16006,8 +16012,8 @@ div.backup-section + form, #page-mod-quiz-mod #id_reviewoptionshdr
 
 .path-mod-assign [data-region="grade-panel"] .fitem.has-popout {
   background-color: #fff;
-  border-radius: 0.25rem;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0;
+  border: 1px solid #eeeeee;
   padding: 1.25rem;
   margin-bottom: 1rem; }
 
@@ -16149,8 +16155,8 @@ div.backup-section + form, #page-mod-quiz-mod #id_reviewoptionshdr
     /* Use card styles but avoid extend because that brings in too much. */ }
     .path-backup .mform .grouped_settings.section_level {
       background-color: #fff;
-      border-radius: 0.25rem;
-      border: 1px solid rgba(0, 0, 0, 0.125);
+      border-radius: 0;
+      border: 1px solid #eeeeee;
       padding: 1.25rem;
       margin-bottom: 1.25rem; }
       .path-backup .mform .grouped_settings.section_level::after {
@@ -16359,8 +16365,8 @@ div.backup-section + form, #page-mod-quiz-mod #id_reviewoptionshdr
   /* Fix for nested table headers */
   /* Add card styles to backup sections */
   background-color: #fff;
-  border-radius: 0.25rem;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0;
+  border: 1px solid #eeeeee;
   padding: 1.25rem;
   margin-bottom: 1.25rem; }
   .path-backup .backup-section .sub-header,
@@ -16702,7 +16708,7 @@ p.arrow_button {
 
 .path-grade-report .gradeparent table,
 .path-grade-report .gradeparent .cell {
-  border-color: #dee2e6; }
+  border-color: #f4f4f4; }
 
 .path-grade-report .gradeparent tr:nth-of-type(even) .cell,
 .path-grade-report .gradeparent .floater .cell,
@@ -16846,7 +16852,7 @@ ol {
   margin: 0 0 0.75 2.5em; }
 
 .navbar-static-top .dropdown .dropdown-menu {
-  max-height: calc(100vh - 60px);
+  max-height: calc(100vh - 50px);
   overflow-y: auto; }
 
 .page-item.active .page-link, .page-item.active .page-link:hover, .page-item.active .page-link:focus {
@@ -17340,7 +17346,7 @@ span[data-flexitour="container"][x-placement="right"], span[data-flexitour="cont
 [data-region="drawer"] [data-flexitour="container"] {
   /*rtl:ignore*/
   margin-left: -15px;
-  width: 275px; }
+  width: 238px; }
 
 @media (max-width: 767.98px) {
   .nav.nav-tabs .nav-item {
@@ -17433,10 +17439,6 @@ span[data-flexitour="container"][x-placement="right"], span[data-flexitour="cont
     left: 50%;
     transform: translate(-50%, -50%); }
 
-/* Corporate identity variables */
-/* Links */
-/* Input */
-/* Buttons */
 /**
  * Navigation bar identity.
  */
