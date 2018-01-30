@@ -31,3 +31,13 @@ Check all grids. This all uses Flexbox now and might break some mdl pages, espec
 
 Fix dropdowns, use BS dropdowns instead of the ones triggered by MDL core JS.
 
+
+Updating Bootstrap JS files
+---------------------------
+
+The process outlined in `theme/boost/readme_moodle.txt` requires a couple of tweaks to work with v4.0.0 of Bootstrap. Updated package versions based on the Bootstrap package.json. Run the follwing inside the cloned Bootstrap repository:
+
+```
+$ npm install @babel/cli@7.0.0-beta.37 @babel/preset-env@7.0.0-beta.37 babel-plugin-transform-es2015-modules-amd @babel/plugin-proposal-object-rest-spread
+$ ./node_modules/@babel/cli/bin/babel.js --presets @babel/preset-env --plugins transform-es2015-modules-amd,@babel/plugin-proposal-object-rest-spread -d out/ /path/to/your/moodle/wwwroot/theme/reboost/amd/src
+```
