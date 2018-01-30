@@ -1,2 +1,15 @@
-@import "preset/default.scss";
+
+// Set image location.
+$breadcrumb-divider: "▶" !default;
+$breadcrumb-divider-rtl: "◀" !default;
+
+// Import font awesome.
+@import "fontawesome/moodle-path";
+@import "fontawesome/font-awesome";
+
+// Import the bootstrap variables.
+@import "bs4/bootstrap";
+@import "bs4alphacompat";
+@import "moodle.scss";
 @import "variables.scss";
+@import "stuff.scss";

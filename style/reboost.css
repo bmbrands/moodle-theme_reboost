@@ -1,10 +1,4 @@
 @charset "UTF-8";
-/* stylelint-disable color-hex-length */
-/**
- * Default preset file.
- *
- * Use this space to customise variables, create mixins and override SCSS.
- */
 /* FONT PATH
  * -------------------------- */
 @font-face {
@@ -2402,7 +2396,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
@@ -2651,25 +2645,25 @@ h1, h2, h3, h4, h5, h6,
   color: inherit; }
 
 h1, .h1 {
-  font-size: 2.1875rem; }
+  font-size: 2.5rem; }
 
 h2, .h2, .path-calendar .maincalendar .calendar-controls .current {
-  font-size: 1.75rem; }
+  font-size: 2rem; }
 
 h3, .h3 {
-  font-size: 1.53125rem; }
+  font-size: 1.75rem; }
 
 h4, .h4 {
-  font-size: 1.3125rem; }
+  font-size: 1.5rem; }
 
 h5, .h5 {
-  font-size: 1.09375rem; }
+  font-size: 1.25rem; }
 
 h6, .h6 {
-  font-size: 0.875rem; }
+  font-size: 1rem; }
 
 .lead, .userprofile .profile_tree section h3 {
-  font-size: 1.09375rem;
+  font-size: 1.25rem;
   font-weight: 300; }
 
 .display-1 {
@@ -2727,7 +2721,7 @@ mark,
 
 .blockquote {
   margin-bottom: 1rem;
-  font-size: 1.09375rem; }
+  font-size: 1.25rem; }
 
 .blockquote-footer {
   display: block;
@@ -3858,7 +3852,7 @@ table#permissions .table-active:hover {
   display: block;
   width: 100%;
   padding: 0.375rem 0.75rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1.5;
   color: #495057;
   background-color: #fff;
@@ -3883,7 +3877,7 @@ table#permissions .table-active:hover {
     opacity: 1; }
 
 select.form-control:not([size]):not([multiple]) {
-  height: calc(2.0625rem + 2px); }
+  height: calc(2.25rem + 2px); }
 
 select.form-control:focus::-ms-value {
   color: #495057;
@@ -3904,13 +3898,13 @@ select.form-control:focus::-ms-value {
 .col-form-label-lg {
   padding-top: calc(0.5rem + 1px);
   padding-bottom: calc(0.5rem + 1px);
-  font-size: 1.09375rem;
+  font-size: 1.25rem;
   line-height: 1.5; }
 
 .col-form-label-sm {
   padding-top: calc(0.25rem + 1px);
   padding-bottom: calc(0.25rem + 1px);
-  font-size: 0.765625rem;
+  font-size: 0.875rem;
   line-height: 1.5; }
 
 .form-control-plaintext {
@@ -3959,7 +3953,7 @@ select.form-control:focus::-ms-value {
 .input-group-sm > .input-group-append > input, #rubric-rubric.gradingform_rubric
 .input-group-sm > .input-group-append > .addcriterion {
   padding: 0.25rem 0.5rem;
-  font-size: 0.765625rem;
+  font-size: 0.875rem;
   line-height: 1.5;
   border-radius: 0.2rem; }
 
@@ -3972,7 +3966,7 @@ select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.for
 .input-group-sm > .input-group-append > select.btn:not([size]):not([multiple]), #page-grade-grading-manage .actions
 .input-group-sm > .input-group-append > select.action:not([size]):not([multiple]), #rubric-rubric.gradingform_rubric
 .input-group-sm > .input-group-append > select.addcriterion:not([size]):not([multiple]) {
-  height: calc(1.6484375rem + 2px); }
+  height: calc(1.8125rem + 2px); }
 
 .form-control-lg, .input-group-lg > .form-control,
 .input-group-lg > .input-group-prepend > .input-group-text,
@@ -3986,7 +3980,7 @@ select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.for
 .input-group-lg > .input-group-append > input, #rubric-rubric.gradingform_rubric
 .input-group-lg > .input-group-append > .addcriterion {
   padding: 0.5rem 1rem;
-  font-size: 1.09375rem;
+  font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0.3rem; }
 
@@ -3999,7 +3993,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .input-group-lg > .input-group-append > select.btn:not([size]):not([multiple]), #page-grade-grading-manage .actions
 .input-group-lg > .input-group-append > select.action:not([size]):not([multiple]), #rubric-rubric.gradingform_rubric
 .input-group-lg > .input-group-append > select.addcriterion:not([size]):not([multiple]) {
-  height: calc(2.640625rem + 2px); }
+  height: calc(2.875rem + 2px); }
 
 .form-group, .form-buttons,
 .path-admin .buttons,
@@ -4262,7 +4256,7 @@ div.backup-section + form,
   user-select: none;
   border: 1px solid transparent;
   padding: 0.375rem 0.75rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
@@ -4674,13 +4668,13 @@ fieldset:disabled a.addcriterion {
 
 .btn-lg, .btn-group-lg > .btn, #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .btn-group-lg > input, #rubric-rubric.gradingform_rubric .btn-group-lg > .addcriterion, #page-grade-grading-manage .actions .action {
   padding: 0.5rem 1rem;
-  font-size: 1.09375rem;
+  font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0.3rem; }
 
 .btn-sm, .btn-group-sm > .btn, #page-grade-grading-manage .actions .btn-group-sm > .action, #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .btn-group-sm > input, #rubric-rubric.gradingform_rubric .btn-group-sm > .addcriterion {
   padding: 0.25rem 0.5rem;
-  font-size: 0.765625rem;
+  font-size: 0.875rem;
   line-height: 1.5;
   border-radius: 0.2rem; }
 
@@ -4758,7 +4752,7 @@ tbody.collapse.show {
   min-width: 10rem;
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: #212529;
   text-align: left;
   list-style: none;
@@ -4875,7 +4869,7 @@ tbody.collapse.show {
   display: block;
   padding: 0.5rem 1.5rem;
   margin-bottom: 0;
-  font-size: 0.765625rem;
+  font-size: 0.875rem;
   color: #6c757d;
   white-space: nowrap; }
 
@@ -5225,7 +5219,7 @@ tbody.collapse.show {
   align-items: center;
   padding: 0.375rem 0.75rem;
   margin-bottom: 0;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
@@ -5356,7 +5350,7 @@ tbody.collapse.show {
 .custom-select {
   display: inline-block;
   width: 100%;
-  height: calc(2.0625rem + 2px);
+  height: calc(2.25rem + 2px);
   padding: 0.375rem 1.75rem 0.375rem 0.75rem;
   line-height: 1.5;
   color: #495057;
@@ -5384,13 +5378,13 @@ tbody.collapse.show {
     opacity: 0; }
 
 .custom-select-sm {
-  height: calc(1.6484375rem + 2px);
+  height: calc(1.8125rem + 2px);
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
   font-size: 75%; }
 
 .custom-select-lg {
-  height: calc(2.640625rem + 2px);
+  height: calc(2.875rem + 2px);
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
   font-size: 125%; }
@@ -5399,14 +5393,14 @@ tbody.collapse.show {
   position: relative;
   display: inline-block;
   width: 100%;
-  height: calc(2.0625rem + 2px);
+  height: calc(2.25rem + 2px);
   margin-bottom: 0; }
 
 .custom-file-input {
   position: relative;
   z-index: 2;
   width: 100%;
-  height: calc(2.0625rem + 2px);
+  height: calc(2.25rem + 2px);
   margin: 0;
   opacity: 0; }
   .custom-file-input:focus ~ .custom-file-control {
@@ -5423,7 +5417,7 @@ tbody.collapse.show {
   right: 0;
   left: 0;
   z-index: 1;
-  height: calc(2.0625rem + 2px);
+  height: calc(2.25rem + 2px);
   padding: 0.375rem 0.75rem;
   line-height: 1.5;
   color: #495057;
@@ -5437,7 +5431,7 @@ tbody.collapse.show {
     bottom: 0;
     z-index: 3;
     display: block;
-    height: calc(calc(2.0625rem + 2px) - 1px * 2);
+    height: calc(calc(2.25rem + 2px) - 1px * 2);
     padding: 0.375rem 0.75rem;
     line-height: 1.5;
     color: #495057;
@@ -5524,10 +5518,10 @@ tbody.collapse.show {
 
 .navbar-brand {
   display: inline-block;
-  padding-top: 0.3359375rem;
-  padding-bottom: 0.3359375rem;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
   margin-right: 1rem;
-  font-size: 1.09375rem;
+  font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap; }
   .navbar-brand:hover, .navbar-brand:focus {
@@ -5558,7 +5552,7 @@ tbody.collapse.show {
 
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
-  font-size: 1.09375rem;
+  font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
@@ -6104,10 +6098,10 @@ tbody.collapse.show {
 .breadcrumb {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 0;
+  padding: 0.75rem 1rem;
   margin-bottom: 1rem;
   list-style: none;
-  background-color: transparent;
+  background-color: #e9ecef;
   border-radius: 0.25rem; }
 
 .breadcrumb-item + .breadcrumb-item::before {
@@ -6177,7 +6171,7 @@ tbody.collapse.show {
 
 .pagination-lg .page-link {
   padding: 0.75rem 1.5rem;
-  font-size: 1.09375rem;
+  font-size: 1.25rem;
   line-height: 1.5; }
 
 .pagination-lg .page-item:first-child .page-link {
@@ -6190,7 +6184,7 @@ tbody.collapse.show {
 
 .pagination-sm .page-link {
   padding: 0.25rem 0.5rem;
-  font-size: 0.765625rem;
+  font-size: 0.875rem;
   line-height: 1.5; }
 
 .pagination-sm .page-item:first-child .page-link {
@@ -6319,7 +6313,7 @@ tbody.collapse.show {
   font-weight: 700; }
 
 .alert-dismissible {
-  padding-right: 3.8125rem; }
+  padding-right: 4rem; }
   .alert-dismissible .close, .alert-dismissible .moodle-dialogue-base .closebutton, .moodle-dialogue-base .alert-dismissible .closebutton {
     position: absolute;
     top: 0;
@@ -6412,7 +6406,7 @@ tbody.collapse.show {
   display: flex;
   height: 1rem;
   overflow: hidden;
-  font-size: 0.65625rem;
+  font-size: 0.75rem;
   background-color: #e9ecef;
   border-radius: 0.25rem; }
 
@@ -6584,7 +6578,7 @@ tbody.collapse.show {
 
 .close, .moodle-dialogue-base .closebutton {
   float: right;
-  font-size: 1.3125rem;
+  font-size: 1.5rem;
   font-weight: 700;
   line-height: 1;
   color: #000;
@@ -6732,7 +6726,7 @@ button.close, .moodle-dialogue-base button.closebutton {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
-  font-size: 0.765625rem;
+  font-size: 0.875rem;
   word-wrap: break-word;
   opacity: 0; }
   .tooltip.show {
@@ -6817,7 +6811,7 @@ button.close, .moodle-dialogue-base button.closebutton {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
-  font-size: 0.765625rem;
+  font-size: 0.875rem;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: padding-box;
@@ -6910,7 +6904,7 @@ button.close, .moodle-dialogue-base button.closebutton {
 .popover-header {
   padding: 0.5rem 0.75rem;
   margin-bottom: 0;
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: inherit;
   background-color: #f7f7f7;
   border-bottom: 1px solid #ebebeb;
@@ -9054,8 +9048,8 @@ a.dimmed_text:visited,
 .maintenancewarning.error {
   padding-right: 2.25rem;
   background-repeat: no-repeat;
-  background-position: center right calc(2.0625rem + 2px)/4;
-  background-size: calc(2.0625rem + 2px)/2 calc(2.0625rem + 2px)/2; }
+  background-position: center right calc(2.25rem + 2px)/4;
+  background-size: calc(2.25rem + 2px)/2 calc(2.25rem + 2px)/2; }
 
 .tag-default {
   background-color: #6c757d; }
@@ -9185,7 +9179,7 @@ a.dimmed_text:visited,
   display: inline; }
 
 .notifytiny {
-  font-size: 0.65625rem; }
+  font-size: 0.75rem; }
 
 .notifytiny li,
 .notifytiny td {
@@ -9203,7 +9197,7 @@ a.autolink.glossary:hover {
 /* Block which is hidden if javascript enabled, prevents fickering visible when JS from footer used! */
 .collapsibleregioncaption {
   white-space: nowrap;
-  min-height: 1.3125rem; }
+  min-height: 1.5rem; }
 
 .pagelayout-mydashboard.jsenabled .collapsibleregioncaption {
   cursor: pointer; }
@@ -9554,11 +9548,11 @@ table.mod_index {
 * Completion progress report
 */
 .completion-expected {
-  font-size: 0.65625rem; }
+  font-size: 0.75rem; }
 
 .completion-sortchoice,
 .completion-identifyfield {
-  font-size: 0.65625rem;
+  font-size: 0.75rem;
   vertical-align: bottom; }
 
 .completion-progresscell {
@@ -10111,10 +10105,10 @@ body#page-lib-editor-tinymce-plugins-moodlemedia-preview {
 
 .moodle-dialogue-exception .param-stacktrace .stacktrace-file {
   color: navy;
-  font-size: 0.765625rem; }
+  font-size: 0.875rem; }
 
 .moodle-dialogue-exception .param-stacktrace .stacktrace-line {
-  font-size: 0.765625rem; }
+  font-size: 0.875rem; }
 
 .moodle-dialogue-exception .param-stacktrace .stacktrace-call {
   color: #333;
@@ -10913,7 +10907,7 @@ span:first-of-type > .icon {
 
 #page-admin-qbehaviours .cell.c3,
 #page-admin-qtypes .cell.c3 {
-  font-size: 0.765625rem; }
+  font-size: 0.875rem; }
 
 #page-admin-lang .generalbox,
 #page-admin-course-index .singlebutton,
@@ -11014,7 +11008,7 @@ span:first-of-type > .icon {
   width: 16%; }
 
 .path-admin .roleassigntable #buttonscell #assignoptions {
-  font-size: 0.765625rem; }
+  font-size: 0.875rem; }
 
 .path-admin .roleassigntable #removeselect_wrapper,
 .path-admin .roleassigntable #addselect_wrapper {
@@ -11038,7 +11032,7 @@ span:first-of-type > .icon {
 .path-admin .rolecap .cap-name,
 .path-admin .rolecap .note {
   display: block;
-  font-size: 0.765625rem;
+  font-size: 0.875rem;
   white-space: nowrap;
   font-weight: normal; }
 
@@ -11197,11 +11191,11 @@ span:first-of-type > .icon {
   background-color: #fff3cd; }
 
 #page-admin-plugins #plugins-control-panel .pluginname .componentname {
-  font-size: 0.765625rem;
+  font-size: 0.875rem;
   margin-left: 22px; }
 
 #page-admin-plugins #plugins-control-panel .version .versionnumber {
-  font-size: 0.765625rem; }
+  font-size: 0.875rem; }
 
 #page-admin-plugins #plugins-control-panel .uninstall a {
   color: #dc3545; }
@@ -11210,7 +11204,7 @@ span:first-of-type > .icon {
   margin-right: 3px; }
 
 #page-admin-plugins #plugins-control-panel .notes .requiredby {
-  font-size: 0.765625rem; }
+  font-size: 0.875rem; }
 
 #plugins-check-page .checkforupdates .singlebutton {
   margin: 5px 0;
@@ -11235,7 +11229,7 @@ span:first-of-type > .icon {
   background-color: #f8d7da; }
 
 #plugins-check-page #plugins-check .displayname .plugindir {
-  font-size: 0.765625rem; }
+  font-size: 0.875rem; }
 
 #plugins-check-page #plugins-check .requires ul {
   margin-left: 13px; }
@@ -11258,7 +11252,7 @@ span:first-of-type > .icon {
     margin: 0 3px 0 0; }
 
 #plugins-check-page #plugins-check-available-dependencies .displayname .component {
-  font-size: 0.765625rem; }
+  font-size: 0.875rem; }
 
 #plugins-check-page #plugins-check-available-dependencies .info .actions > div {
   display: inline-block;
@@ -11323,7 +11317,7 @@ span:first-of-type > .icon {
 /** MNet networking */
 #page-admin-mnet-peers .box.deletedhosts {
   margin-bottom: 1em;
-  font-size: 0.765625rem; }
+  font-size: 0.875rem; }
 
 #page-admin-mnet-peers .mform .deletedhostinfo {
   padding: 4px;
@@ -12175,7 +12169,7 @@ table.calendartable caption {
   margin: 2px 5px 2px 5px; }
 
 .course-content .section-summary .section-summary-activities .activity-count {
-  font-size: 0.765625rem;
+  font-size: 0.875rem;
   margin: 3px;
   white-space: nowrap;
   display: inline-block; }
@@ -12362,7 +12356,7 @@ span.editinstructions {
   top: 0;
   margin-top: -22px;
   margin-left: 30px;
-  font-size: 0.765625rem;
+  font-size: 0.875rem;
   padding: .1em .4em;
   background-color: #d1ecf1;
   color: #17a2b8;
@@ -12530,7 +12524,7 @@ span.editinstructions {
   padding: 1rem; }
 
 .course_category_tree .category .numberofcourse {
-  font-size: 0.765625rem; }
+  font-size: 0.875rem; }
 
 .course_category_tree .controls {
   visibility: hidden; }
@@ -12900,7 +12894,7 @@ span.editinstructions {
   margin-top: initial; }
 
 #nav-drawer.closed {
-  left: -268px; }
+  left: -305px; }
 
 #page {
   margin-top: 60px; }
@@ -12908,14 +12902,14 @@ span.editinstructions {
 /* Use a variable for the drawer background colors. */
 [data-region="drawer"] {
   position: fixed;
-  padding: 5px 0px;
-  width: 248px;
+  padding: 20px 20px;
+  width: 285px;
   top: 60px;
   height: calc(100% - 60px);
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   z-index: 999;
-  background-color: #F5f5f5;
+  background-color: #dee2e6;
   -webkit-transition: right 0.5s ease, left 0.5s ease;
   -moz-transition: right 0.5s ease, left 0.5s ease;
   transition: right 0.5s ease, left 0.5s ease; }
@@ -12937,11 +12931,11 @@ body.drawer-ease {
 
 @media (min-width: 768px) {
   body.drawer-open-left {
-    margin-left: 248px; } }
+    margin-left: 285px; } }
 
 @media (min-width: 768px) {
   body.drawer-open-right {
-    margin-right: 248px; } }
+    margin-right: 285px; } }
 
 .fp-content-center {
   height: 100%;
@@ -13321,7 +13315,7 @@ a.ygtvspacer:hover {
   float: right; }
 
 .fp-select .fp-info {
-  font-size: 0.65625rem; }
+  font-size: 0.75rem; }
 
 .fp-select .fp-thumbnail {
   float: left;
@@ -15303,7 +15297,7 @@ input#id_externalurl {
   display: inline; }
 
 .form-label .form-shortname {
-  font-size: 0.65625rem;
+  font-size: 0.75rem;
   display: block; }
 
 .form-item .form-inline {
@@ -15335,7 +15329,7 @@ div.backup-section + form,
   width: 100%;
   padding: 0;
   margin-bottom: 1.5;
-  font-size: 1.09375rem;
+  font-size: 1.25rem;
   line-height: 3;
   border: 0;
   border-bottom: 1px solid #e5e5e5; }
@@ -15426,12 +15420,12 @@ fieldset.coursesearchbox label {
   margin: 0;
   padding: 0;
   border: 0;
-  margin-top: 1.5625rem;
+  margin-top: 1.75rem;
   vertical-align: bottom; }
 
 .form-autocomplete-selection {
   margin: 0.25rem;
-  min-height: 2.25rem; }
+  min-height: 2.5rem; }
 
 .form-autocomplete-multiple [role=listitem] {
   cursor: pointer; }
@@ -15547,8 +15541,8 @@ div.backup-section + form, [data-fieldtype="modgrade"]
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d9534f' viewBox='-2 -2 7 7'%3E%3Cpath stroke='%23d9534f' d='M0 0l3 3m0-3L0 3'/%3E%3Ccircle r='.5'/%3E%3Ccircle cx='3' r='.5'/%3E%3Ccircle cy='3' r='.5'/%3E%3Ccircle cx='3' cy='3' r='.5'/%3E%3C/svg%3E");
   padding-right: 2.25rem;
   background-repeat: no-repeat;
-  background-position: center right calc(2.0625rem + 2px)/4;
-  background-size: calc(2.0625rem + 2px)/2 calc(2.0625rem + 2px)/2; }
+  background-position: center right calc(2.25rem + 2px)/4;
+  background-size: calc(2.25rem + 2px)/2 calc(2.25rem + 2px)/2; }
   .has-danger .editor_atto_content.form-control .form-control-feedback, .has-danger .editor_atto_content.form-control #adminsettings .form-overridden, #adminsettings .has-danger .editor_atto_content.form-control .form-overridden,
   .has-danger .editor_atto_content.form-control .form-control-label,
   .has-danger .editor_atto_content.form-control .form-check-label,
@@ -15835,7 +15829,7 @@ div#dock {
   .userswitchedrole .usermenu .usertext .meta,
   .loginfailures .usermenu .usertext .meta {
     display: block;
-    font-size: 0.765625rem; }
+    font-size: 0.875rem; }
 
 .userloggedinas .usermenu .avatar img,
 .userswitchedrole .usermenu .avatar img,
@@ -16022,7 +16016,7 @@ div.backup-section + form, #page-mod-quiz-mod #id_reviewoptionshdr
   margin-bottom: 1rem; }
 
 .path-mod-assign [data-region="grade-panel"] .popout > .col-md-3 {
-  font-size: 1.3125rem; }
+  font-size: 1.5rem; }
 
 .path-mod-assign [data-region="grade-panel"] .popout [data-region="popout-button"] {
   margin-top: 0; }
@@ -16125,7 +16119,7 @@ div.backup-section + form, #page-mod-quiz-mod #id_reviewoptionshdr
     .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax #chat-messages .chat-event.course-theme {
       text-align: center;
       margin: 10px 0;
-      font-size: 0.765625rem;
+      font-size: 0.875rem;
       color: #777; }
     .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax #chat-messages .chat-message.course-theme {
       background-color: #fff !important;
@@ -16463,7 +16457,7 @@ p.arrow_button {
     margin: 3em auto 5em; }
 
 #addcontrols {
-  margin-top: 10.5rem;
+  margin-top: 12rem;
   text-align: center;
   margin-bottom: 3em; }
   #addcontrols label {
@@ -16477,7 +16471,7 @@ p.arrow_button {
   margin: 0 0 10px 5px; }
 
 .gradetreebox h4 {
-  font-size: 0.875rem; }
+  font-size: 1rem; }
 
 .gradetreebox th.cell,
 .gradetreebox input[type=text] {
@@ -17069,7 +17063,7 @@ body {
   right: 0; }
 
 .navbar .popover-region-container {
-  top: 1.8375rem; }
+  top: 2.1rem; }
 
 .content-item-container {
   width: 100%;
@@ -17346,7 +17340,7 @@ span[data-flexitour="container"][x-placement="right"], span[data-flexitour="cont
 [data-region="drawer"] [data-flexitour="container"] {
   /*rtl:ignore*/
   margin-left: -15px;
-  width: 238px; }
+  width: 275px; }
 
 @media (max-width: 767.98px) {
   .nav.nav-tabs .nav-item {
@@ -17382,7 +17376,7 @@ span[data-flexitour="container"][x-placement="right"], span[data-flexitour="cont
 
 .badge {
   background-color: #6c757d;
-  border-radius: 0.4375rem; }
+  border-radius: 0.5rem; }
   .badge[href]:hover, .badge[href]:focus {
     background-color: #545b62; }
 
@@ -17439,6 +17433,10 @@ span[data-flexitour="container"][x-placement="right"], span[data-flexitour="cont
     left: 50%;
     transform: translate(-50%, -50%); }
 
+/* Corporate identity variables */
+/* Links */
+/* Input */
+/* Buttons */
 /**
  * Navigation bar identity.
  */

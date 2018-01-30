@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $THEME->name = 'reboost';                                                                                                             
-$THEME->sheets = [];
+$THEME->sheets = ['reboost'];
 $THEME->editor_sheets = [];
 $THEME->parents = ['boost'];
 $THEME->enable_dock = false;
