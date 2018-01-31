@@ -105,4 +105,11 @@
     <version>4.7.0</version>
     <licenseversion></licenseversion>
   </library>
+  <library>
+    <location>amd/src/popper.js</location>
+    <name>Popper.js</name>
+    <license>MIT</license>
+    <version>v1.12.9</version>
+    <licenseversion></licenseversion>
+  </library>
 </libraries>
