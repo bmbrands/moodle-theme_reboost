@@ -1,4 +1,4 @@
-define(["exports", "jquery", "popper.js", "./util"], function (exports, _jquery, _popper, _util) {
+define(["exports", "jquery", "./popper", "./util"], function (exports, _jquery, _popper, _util) {
   "use strict";
 
   Object.defineProperty(exports, "__esModule", {
