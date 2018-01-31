@@ -39,12 +39,12 @@ The process outlined in `theme/boost/readme_moodle.txt` requires a couple of twe
 
 ```
 $ npm install @babel/cli@7.0.0-beta.37 @babel/preset-env@7.0.0-beta.37 babel-plugin-transform-es2015-modules-amd @babel/plugin-proposal-object-rest-spread
-$ ./node_modules/@babel/cli/bin/babel.js --presets @babel/preset-env --plugins transform-es2015-modules-amd,@babel/plugin-proposal-object-rest-spread -d out/ /path/to/your/moodle/dirroot/theme/reboost/amd/src
+$ ./node_modules/@babel/cli/bin/babel.js --presets @babel/preset-env --plugins transform-es2015-modules-amd,@babel/plugin-proposal-object-rest-spread -d /path/to/your/moodle/dirroot/theme/reboost/amd/src
 ```
 
 Popper JS
 ---------
-Bootstrap 4 has a peer dependency on [Popper](https://popper.js.org). Note that while popper is included in core `admin/tool/usertours/amd/src/popper.js` but an older version.
+Bootstrap 4 has a peer dependency on [Popper](https://popper.js.org). Note that while popper is included in core `admin/tool/usertours/amd/src/popper.js` it is an older version.
 ```
 $ git clone https://github.com/FezVrasta/popper.js.git
 $ git checkout 1.12.9 # or whatever the latest release tag is
