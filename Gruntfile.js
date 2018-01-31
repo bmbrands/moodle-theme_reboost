@@ -29,6 +29,9 @@ module.exports = function(grunt) {
                         grunt.log.writeln("Moodle theme cache reset.");
                     }
                 }
+            },
+            postcss: {
+                command: 'npm run postcss'
             }
         },
         watch: {
@@ -92,7 +95,7 @@ module.exports = function(grunt) {
                     'style/reboost.css': 'scss/reboost.scss'
                 }
             }
-        }
+        },
     });
 
     // Load contrib tasks.
@@ -114,6 +117,7 @@ module.exports = function(grunt) {
 
     grunt.registerTask("compile", [
         "sass",
+        "exec:postcss",
         "decache"
     ]);
 
