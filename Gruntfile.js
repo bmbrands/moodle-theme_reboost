@@ -33,7 +33,7 @@ module.exports = function(grunt) {
         },
         watch: {
             // Watch for any changes to less files and compile.
-            files: ["scss/**/*.scss", "templates/*.mustache"],
+            files: ["scss/**/*.scss"],
             tasks: ["compile"],
             options: {
                 spawn: false,

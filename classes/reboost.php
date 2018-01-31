@@ -122,7 +122,13 @@ class reboost {
     }
 
     public function reboostheader() {
-        $fullheader = new \theme_reboost\output\reboost\fullheader($this);
-        return $this->renderer->render($fullheader);
+        global $PAGE;
+        if (isset($PAGE->layout_options['courseheader']) &&  $PAGE->layout_options['courseheader']) {
+            $courseheader = new \theme_reboost\output\reboost\courseheader($this);
+            return $this->renderer->render($courseheader);
+        } else {
+            $fullheader = new \theme_reboost\output\reboost\fullheader($this);
+            return $this->renderer->render($fullheader);
+        }
     }
 }

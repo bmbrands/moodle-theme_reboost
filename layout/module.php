@@ -17,7 +17,7 @@
 /**
  * A two column layout for the boost theme.
  *
- * @package   theme_boost
+ * @package   theme_reboost
  * @copyright 2018 Moodle
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */

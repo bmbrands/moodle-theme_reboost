@@ -55,17 +55,15 @@
         ]
     }
 }}
-<nav class="list-group">
-    <ul class="nav nav-stacked">
-{{# flatnavigation }}
+<ul class="list-group my-3">
+    {{# flatnavigation }}
     {{#showdivider}}
-</nav>
-<nav class="m-t-1">
+</ul>
+<ul class="list-group my-3">
     {{/showdivider}}
     
     {{#action}}
-    <li class="nav-item {{#isactive}}active{{/isactive}}">
-        <a class="nav-link {{#isactive}}font-weight-bold{{/isactive}}" href="{{{action}}}" data-key="{{key}}" data-isexpandable="{{isexpandable}}" data-indent="{{get_indent}}" data-showdivider="{{showdivider}}" data-type="{{type}}" data-nodetype="{{nodetype}}" data-collapse="{{collapse}}" data-forceopen="{{forceopen}}" data-isactive="{{isactive}}" data-hidden="{{hidden}}" data-preceedwithhr="{{preceedwithhr}}" {{#parent.key}}data-parent-key="{{.}}"{{/parent.key}}>
+        <a class="list-group-item list-group-item-action {{#isactive}}active font-weight-bold{{/isactive}}" href="{{{action}}}" data-key="{{key}}" data-isexpandable="{{isexpandable}}" data-indent="{{get_indent}}" data-showdivider="{{showdivider}}" data-type="{{type}}" data-nodetype="{{nodetype}}" data-collapse="{{collapse}}" data-forceopen="{{forceopen}}" data-isactive="{{isactive}}" data-hidden="{{hidden}}" data-preceedwithhr="{{preceedwithhr}}" {{#parent.key}}data-parent-key="{{.}}"{{/parent.key}}>
             <div class="m-l-{{get_indent}}">
                 {{#is_section}}
                     <div class="media">
@@ -81,19 +79,18 @@
                 {{/is_section}}
             </div>
         </a>
-    </li>
     {{/action}}
+
     {{^action}}
-    <div class="list-group-item" data-key="{{key}}" data-isexpandable="{{isexpandable}}" data-indent="{{get_indent}}" data-showdivider="{{showdivider}}" data-type="{{type}}" data-nodetype="{{nodetype}}" data-collapse="{{collapse}}" data-forceopen="{{forceopen}}" data-isactive="{{isactive}}" data-hidden="{{hidden}}" data-preceedwithhr="{{preceedwithhr}}" {{#parent.key}}data-parent-key="{{.}}"{{/parent.key}}>
-        <div class="m-l-{{get_indent}}">
-            {{#is_section}}
-                {{#pix}}i/folder{{/pix}}
-            {{/is_section}}
-            {{{text}}}
-        </div>
-    </div>
+        <li class="list-group-item" data-key="{{key}}" data-isexpandable="{{isexpandable}}" data-indent="{{get_indent}}" data-showdivider="{{showdivider}}" data-type="{{type}}" data-nodetype="{{nodetype}}" data-collapse="{{collapse}}" data-forceopen="{{forceopen}}" data-isactive="{{isactive}}" data-hidden="{{hidden}}" data-preceedwithhr="{{preceedwithhr}}" {{#parent.key}}data-parent-key="{{.}}"{{/parent.key}}>
+            <div class="ml-{{get_indent}}">
+                {{#is_section}}
+                    {{#pix}}i/folder{{/pix}}
+                {{/is_section}}
+                {{{text}}}
+            </div>
+        </li>
     {{/action}}
     
 {{/ flatnavigation }}
 </ul>
-</nav>

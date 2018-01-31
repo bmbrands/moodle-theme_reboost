@@ -19,7 +19,7 @@ defined('MOODLE_INTERNAL') || die();
 /**
  * A login page layout for the boost theme.
  *
- * @package   theme_boost
+ * @package   theme_reboost
  * @copyright 2016 Damyon Wiese
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -32,5 +32,5 @@ $templatecontext = [
     'bodyattributes' => $bodyattributes
 ];
 
-echo $OUTPUT->render_from_template('theme_boost/login', $templatecontext);
+echo $OUTPUT->render_from_template('theme_reboost/login', $templatecontext);
 

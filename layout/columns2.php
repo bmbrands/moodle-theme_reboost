@@ -17,8 +17,8 @@
 /**
  * A two column layout for the boost theme.
  *
- * @package   theme_boost
- * @copyright 2016 Damyon Wiese
+ * @package   theme_reboost
+ * @copyright 2018 Moodle
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -29,9 +29,8 @@ require_once($CFG->libdir . '/behat/lib.php');
 
 $reboost = new \theme_reboost\reboost();
 
-$reboost->removenav();
-$reboost->defaultnav();
-$reboost->addmycourses();
+// This changes navigation. Only use when experimenting with navigation
+// $reboost->init();
 
 $this->reboostrenderer = $PAGE->get_renderer('theme_reboost', 'reboost');
 

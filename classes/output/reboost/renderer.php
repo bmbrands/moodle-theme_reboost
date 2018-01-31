@@ -47,4 +47,9 @@ class renderer extends \theme_reboost\output\renderer {
         $templatevars = $fullheader->export_for_template($this);
         return $this->render_from_template('theme_reboost/reboost-fullheader', $templatevars);
     }
+
+    public function render_courseheader(\theme_reboost\output\reboost\courseheader $courseheader) {
+        $templatevars = $courseheader->export_for_template($this);
+        return $this->render_from_template('theme_reboost/reboost-courseheader', $templatevars);
+    }
 }

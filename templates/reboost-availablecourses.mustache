@@ -1,21 +1,19 @@
-<div class="container-fluid">
-    <div class="row">
-        <div class="card-deck">
-            {{#courses}}
-                <div class="card">
-                    <a href="{{{courselink}}}">
-                        <img class="card-img-top img-responsive" src="{{courseimage}}" alt="Course Image name">
-                    </a>
-                    <div class="card-block">
-                        <a href="{{{courselink}}}"><h4 class="card-title">{{coursename}}</h4></a>
-                        <p class="card-text">{{coursedescription}}</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                </div>
-            {{/courses}}
+
+<div class="card-deck">
+    {{#courses}}
+        <div class="card " style="max-width: 18rem;">
+            <a href="{{{courselink}}}">
+                <img class="card-img-top img-responsive" src="{{courseimage}}" alt="Course Image name">
+            </a>
+            <div class="card-body">
+                <a href="{{{courselink}}}"><h4 class="card-title">{{coursename}}</h4></a>
+                <p class="card-text">{{coursedescription}}</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
         </div>
-    </div>
+    {{/courses}}
 </div>
+
 
 {{#hasmorecourses}}
 <div class="text-center">

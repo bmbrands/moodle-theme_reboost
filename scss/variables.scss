@@ -31,8 +31,8 @@ $body-bg:    #fff !default;
 $body-color: #3a4a4a !default;
 
 // Typography
-$font-family-sans-serif: "Open Sans", "Helvetica Neue", Arial, sans-serif !default;
-$font-size-root: 14px !default;
+$font-family-sans-serif: "Helvetica Neue", Arial, sans-serif !default;
+$font-size-base: 0.87rem !default;
 
 // Tables
 $table-bg:                      transparent !default;
@@ -74,6 +74,5 @@ $font-size-h3: 1.15rem !default;
 $font-size-h4: 1.5rem !default;
 $font-size-h5: 1rem !default;
 $font-size-h6: 1rem !default;
-
 
 $small-font-size: 0.85rem;
