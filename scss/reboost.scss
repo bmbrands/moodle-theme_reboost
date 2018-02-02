@@ -8,13 +8,13 @@ $breadcrumb-divider-rtl: "◀" !default;
 @import "fontawesome/font-awesome";
 
 // Try a bootswatch
-@import "bootswatch/dist/spacelab/variables";
+@import "bootswatch/dist/sketchy/variables";
 
 // Import the bootstrap variables.
 // @import "variables.scss";
 @import "bs4/bootstrap";
 
-@import "bootswatch/dist/spacelab/bootswatch";
+@import "bootswatch/dist/sketchy/bootswatch";
 
 // Prepare variables for Moodle use
 @import "bs4alphacompat";
