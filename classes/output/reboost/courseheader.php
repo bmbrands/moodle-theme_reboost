@@ -31,12 +31,32 @@ use renderable;
 use templatable;
 use renderer_base;
 use stdClass;
+use action_menu;
+use navigation_node;
+use moodle_url;
+use action_link;
+use pix_icon;
 
 class courseheader implements renderable, templatable {
     private $reboost;
+    private $coursemenus;
 
     public function __construct(\theme_reboost\reboost $reboost) {
         $this->reboost = $reboost;
+
+        $this->coursemenus =
+            ['users' =>
+                ['review',
+                 'manageinstances',
+                 'divider',
+                 'groups',
+                 'divider',
+                 'override',
+                 'permissions',
+                 'divider',
+                 'otherusers'
+                ]
+            ];
     }
     /**
      * Export this data so it can be used as the context for a mustache template.
@@ -63,6 +83,59 @@ class courseheader implements renderable, templatable {
         $data->abbr = $abbr;
         $data->iconcolornr = $COURSE->id;
         $data->navbar = $output->navbar();
+        $data->navtabs = $this->courseheadermenu($output);
         return $data;
+    }
+
+    private function courseheadermenu(renderer_base $output) {
+        global $PAGE;
+        $menu = new action_menu();
+        $settingsnode = $PAGE->settingsnav->find('courseadmin', navigation_node::TYPE_COURSE);
+        if ($settingsnode) {
+            // Build an action menu based on the visible nodes from this navigation tree.
+            return $this->courseheadernav($settingsnode);
+        }
+    }
+
+    private function courseheadernav(navigation_node $node) {
+        $navtabs = new stdClass();
+        foreach ($node->children as $menuitem) {
+            foreach ($this->coursemenus as $key => $items) {
+                if ($menuitem->key === $key) {
+                    $navtabs->dropdowns[] = $this->build_courseheader_dropdown($menuitem);
+                }
+            }
+        }
+        return $navtabs;
+    }
+
+    private function build_courseheader_dropdown(navigation_node $node) {
+        $dropdown = new stdClass();
+        $dropdown->title = $node->text;
+        $items = [];
+
+        // Get the nav items
+        foreach ($node->children as $navsub) {
+            if (in_array($navsub->key, $this->coursemenus[$node->key])) {
+                $dropdownitem = new stdClass();
+                $dropdownitem->text = $navsub->text;
+                $dropdownitem->action = $navsub->action;
+                $dropdownitem->key = $navsub->key;
+                $items[$navsub->key] = $dropdownitem;
+            }
+        }
+        // Sort the nav items and add diveders
+        foreach ($this->coursemenus[$node->key] as $dropdownitem) {
+            if ($dropdownitem === 'divider') {
+                $dropdownitem = new stdClass();
+                $dropdownitem->isdivider = true;
+                $dropdown->items[] = $dropdownitem;
+                continue;
+            }
+            if (isset($items[$dropdownitem])) {
+                $dropdown->items[] = $items[$dropdownitem];
+            }
+        }
+        return $dropdown;
     }
 }

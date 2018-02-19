@@ -37,9 +37,10 @@ $THEME->rendererfactory = 'theme_overridden_renderer_factory';
 $THEME->requiredblocks = '';
 $THEME->addblockposition = BLOCK_ADDBLOCK_POSITION_FLATNAV;
 
-// $THEME->scss = function($theme) {
-//     return theme_reboost_get_main_scss_content($theme);
-// };
+$THEME->scss = function($theme) {
+    return '';
+    return theme_reboost_get_main_scss_content($theme);
+};
 
 $THEME->layouts = [
     'base' => array(
