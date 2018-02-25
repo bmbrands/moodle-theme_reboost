@@ -48,7 +48,7 @@
         "hasregionmainsettingsmenu": false
     }
 }}
-{{> theme_reboost/reboost-header }}
+{{> theme_reboost/head }}
 
 <body {{{ bodyattributes }}}>
 
@@ -56,7 +56,7 @@
 
     {{{ output.standard_top_of_body_html }}}
 
-    {{>theme_reboost/header}}
+    {{>theme_reboost/navbar}}
 
     <div id="page" class="container-fluid">
         {{{reboostheader}}}
@@ -87,7 +87,7 @@
     </div>
     {{> theme_reboost/nav-drawer }}
 </div>
-{{> theme_reboost/reboost-footer }}
+{{> theme_reboost/footer }}
 </body>
 </html>
 {{#js}}

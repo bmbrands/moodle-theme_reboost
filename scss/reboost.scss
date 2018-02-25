@@ -7,17 +7,18 @@ $breadcrumb-divider-rtl: "◀" !default;
 @import "fontawesome/moodle-path";
 @import "fontawesome/font-awesome";
 
-// Try a bootswatch
-@import "bootswatch/dist/litera/variables";
+// Go ahead, try a bootswatch
+// @import "bootswatch/dist/sketchy/variables";
 
-// Import the bootstrap variables.
-// @import "variables.scss";
-@import "bs4/bootstrap";
+@import "preset/default/variables";
 
-@import "bootswatch/dist/litera/bootswatch";
+// Import Bootstrap.
+@import "bootstrap/bootstrap";
 
-// Prepare variables for Moodle use
+// // Try a bootswatch
+// // @import "bootswatch/dist/sketchy/bootswatch";
+@import "preset/default/bootswatch";
+
+// // Prepare variables for Moodle use
 @import "bs4alphacompat";
 @import "moodle.scss";
-
-@import "stuff.scss";
