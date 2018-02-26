@@ -8,13 +8,49 @@
                 <div class="pull-left">
                     <h1>{{{fullname}}}</h1>
                 </div>
-                {{>theme_reboost/reboost-courseheadermenu}}
                 <div class="clearfix"></div>
                 <div id="page-navbar">
                     {{{navbar}}}
                 </div> 
             </div>
         </div>
+        {{>theme_reboost/reboost-courseheadermenu}}
     </div>
     <div class="clearfix"></div>
 </header>
+<div class="coursenav p-l-course p-r-course">
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Contents</a>
+        </li>
+        {{#navtabs.dropdowns}}
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{{title}}}</a>
+                <div class="dropdown-menu">
+                    {{#items}}
+                        {{#isdivider}}
+                            <div class="dropdown-divider"></div>
+                        {{/isdivider}}
+                        {{^isdivider}}
+                            <a class="dropdown-item" href="{{{action}}}" data-key="{{key}}">
+                                {{{text}}}
+                            </a>
+                        {{/isdivider}}
+                    {{/items}}
+                </div>
+            </li>
+        {{/navtabs.dropdowns}}
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Grades</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Reports</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link">Competencies</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link">Badges</a>
+        </li>
+    </ul>
+</div>

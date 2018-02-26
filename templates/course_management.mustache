@@ -1,0 +1,51 @@
+{{{header}}}
+
+{{#issearching}}
+{{/issearching}}
+{{{managementheading}}}
+
+{{{notification}}}
+
+<form action="{{{pageurl}}}" method="post" id="coursecat-management">
+    <input type="hidden" name="sesskey" value="{{{sesskey}}}">
+    <input type="hidden" name="action" value="bulkaction">
+    
+    <div class="skiplinks accesshide">
+        {{#displaycategorylisting}}
+            <a href="{{{skiptocategorylisting}}}" class="skip">{{#str}}skiptocategorylisting{{/str}}</a>
+        {{/displaycategorylisting}}
+
+        {{#displaycourselisting}}
+            <a href="{{{skiptocourselisting}}}" class="skip">{{#str}}skiptocourselisting{{/str}}</a>
+        {{/displaycourselisting}}
+
+        {{#displaycoursedetail}}
+            <a href="{{{skiptocoursedetails}}}" class="skip">{{#str}}skiptocoursedetails{{/str}}</a>
+        {{/displaycoursedetail}}
+    </div>
+
+    <div id="course-category-listings" class="d-flex flex-wrap row m-b-3">
+        {{#displaycategorylisting}}
+            <div id="category-listing" class="col-sm d-flex flex-wrap">
+                {{{categorylisting}}}
+            </div>
+        {{/displaycategorylisting}}
+
+        {{#displaycourselisting}}
+            <div id="course-listing" class="col-sm d-flex flex-wrap">
+                {{{courselisting}}}
+            </div>
+        {{/displaycourselisting}}
+    </div>
+    {{{coursedetail}}}
+</form>
+
+<form id="coursesearch" class="form-inline" action="{{{searchurl}}}" method="get">
+    <div class="input-group">
+        <label for="coursesearch" class="sr-only">{{#str}}searchcourses{{/str}}</label>
+        <input type="text" class="form-control mr-sm-2"  placeholder="{{#str}}searchcourses{{/str}}" value="{{{search}}}">
+        <span class="input-group-append">
+            <button type="submit" class="btn btn-default">{{#str}}go{{/str}}</button>
+        </span>
+    </div>
+</form>

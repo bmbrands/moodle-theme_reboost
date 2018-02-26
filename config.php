@@ -37,9 +37,10 @@ $THEME->rendererfactory = 'theme_overridden_renderer_factory';
 $THEME->requiredblocks = '';
 $THEME->addblockposition = BLOCK_ADDBLOCK_POSITION_FLATNAV;
 
-// $THEME->scss = function($theme) {
-//     return theme_reboost_get_main_scss_content($theme);
-// };
+$THEME->scss = function($theme) {
+    return '';
+    return theme_reboost_get_main_scss_content($theme);
+};
 
 $THEME->layouts = [
     'base' => array(
@@ -133,8 +134,8 @@ $THEME->layouts = [
     )
 ];
 
-$THEME->csstreepostprocessor = 'theme_reboost_css_tree_post_processor';
-$THEME->extrascsscallback = 'theme_reboost_get_extra_scss';
-$THEME->prescsscallback = 'theme_reboost_get_pre_scss';
+// $THEME->csstreepostprocessor = 'theme_reboost_css_tree_post_processor';
+// $THEME->extrascsscallback = 'theme_reboost_get_extra_scss';
+// $THEME->prescsscallback = 'theme_reboost_get_pre_scss';
 
 $THEME->iconsystem = \core\output\icon_system::FONTAWESOME;
