@@ -13,13 +13,9 @@
     }
 
 }}
-{{! Block Skip Link }}
-{{#showskiplink}}
-  <a href="#sb-{{skipid}}" class="sr-only sr-only-focusable">{{#str}}skipa, access, {{title}}{{/str}}</a>
-{{/showskiplink}}
 
 {{! Start Block Container }}
-<aside id="{{id}}"
+<div id="{{id}}"
      class="{{#hidden}}hidden{{/hidden}} block block_{{type}} {{#hascontrols}}block_with_controls{{/hascontrols}} card mb-2"
      role="{{ariarole}}"
      data-block="{{type}}"
@@ -55,9 +51,4 @@
     </div>
 
 {{! End Block Container }}
-</aside>
-
-{{! Block Skip Link Target }}
-{{#showskiplink}}
-  <span id="sb-{{skipid}}"></span>
-{{/showskiplink}}
+</div>
